@@ -5,20 +5,42 @@ public class Car
     private int doorAmount;
     private boolean automaticGearBox;
 
-    public Car(String colour, int doorAmount, String brand, boolean automaticGearBox)
-    {
+    public Car(String brand, String colour, int doorAmount, boolean automaticGearBox) {
+        this.brand = brand;
         this.colour = colour;
         this.doorAmount = doorAmount;
-        this.brand = brand;
         this.automaticGearBox = automaticGearBox;
     }
 
-    public void setAutomaticGearBox(boolean automaticGearBox)
-    {
-        this.automaticGearBox = automaticGearBox;
+    public String getBrand() {
+        return brand;
     }
-    public boolean getAutomaticGearBox()
-    {
+
+    public void setBrand(String brand) {
+        this.brand = brand;
+    }
+
+    public String getColour() {
+        return colour;
+    }
+
+    public void setColour(String colour) {
+        this.colour = colour;
+    }
+
+    public int getDoorAmount() {
+        return doorAmount;
+    }
+
+    public void setDoorAmount(int doorAmount) {
+        this.doorAmount = doorAmount;
+    }
+
+    public boolean getAutomaticGearBox() {
         return automaticGearBox;
+    }
+
+    public void setAutomaticGearBox(boolean automaticGearBox) {
+        this.automaticGearBox = automaticGearBox;
     }
 }
